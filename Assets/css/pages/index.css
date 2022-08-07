@@ -1,0 +1,28 @@
+.corpo{
+    /*display: flex;*/
+    color: var(--azul-escuro);
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+}
+
+.corpo h1{
+
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.corpo h3{
+
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.corpo_img{
+    text-align : center;
+
+}

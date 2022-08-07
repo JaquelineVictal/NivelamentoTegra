@@ -1,0 +1,103 @@
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+
+    background-color: var(--lilas);
+    border-radius: 0 0 12px 12px;
+    box-shadow: rgb(0 0 0 / 40%) 0 9px 19px;
+
+    height: 10vh ;
+
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+
+
+.menu__link__img {
+    max-width: 65px;
+    width: 15vw;
+}
+
+.menu_itens{
+    list-style:none;
+    float:left;
+    display: flex;
+    justify-content: space-around;
+    }
+
+.menu_itens li{
+    position:relative;
+    color: var(--white);
+    float:left;
+    justify-content: space-around;
+    
+}
+
+.menu_itens li a{
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    color: var(--white); 
+    text-decoration:none; 
+    padding: 10px 10px; 
+    /*display:block;*/
+}
+
+.menu_itens li a:hover{
+    /*background: var(--lilas);
+    color: var(--white);
+    justify-content: space-around;
+    box-shadow: rgb(0 0 0 / 40%) 0 9px 19px;
+    -webkit-box-shadow:0 3px 10px 0 #ccc;
+    text-shadow:0px 0px 5px #fff;*/
+    text-decoration: underline;
+    
+    
+}
+
+.menu_itens li  ul{
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color:var(--lilas);
+    display:none;
+}
+
+.menu_itens li  ul:hover{
+    text-decoration: underline;
+
+}
+
+.menu_itens li:hover ul, .menu li.over ul{display:block;}
+
+.menu_itens li ul li{
+    
+    display:block;
+    width:150px;
+    color: var(--white);
+}
+.menu_itens li ul li:hover{
+    text-decoration: underline;
+    background-color: var(--lilas-escuro);
+ 
+}
+
+
+@media (max-width: 768px) {
+    .menu {
+        height: 10vh;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 1000px) {
+    .menu {
+        height: 12vh;
+        justify-content: space-between;
+    }
+}

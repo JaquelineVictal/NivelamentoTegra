@@ -1,0 +1,33 @@
+.formularioExercicio {
+    margin: auto;
+    width: 80vw;
+    margin-bottom: 4rem;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+    box-shadow: rgb(0 0 0 / 40%) 7px 9px 19px;
+    border-radius: 5px;
+}
+
+.titulo_formulario{
+    color: var(--lilas-escuro);
+    font-weight: 700;
+
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+@media (min-width: 768px) {
+    .cadastro {
+        width: 40vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cadastro {
+        width: 40vw;
+    }
+}
