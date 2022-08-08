@@ -19,8 +19,8 @@ document.getElementById("cancel").addEventListener("click",function() {
 
 document.getElementById("salve").addEventListener("click",(event) => {
    // salvando os valores
-   const inicial = parseFloat(document.getElementById("inicial").value)
-   const final = parseFloat(document.getElementById("final").value)
+   const inicial = parseInt(document.getElementById("inicial").value)
+   const final = parseInt(document.getElementById("final").value)
 
 
  
@@ -40,13 +40,16 @@ document.getElementById("salve").addEventListener("click",(event) => {
 
 const calulos = (inicial,final) => {
    var resultado = new Object()
+   
 
-   const soma = 0
+   var soma = 0
 
    for (var i = inicial ; i <= final; i++) {
 
+      console.log(soma)
       soma = soma + i
    }
+
    resultado.soma= soma
    return resultado
 }
@@ -58,39 +61,21 @@ const calulos = (inicial,final) => {
 const getResultHTML = (objeto) => {
    const main = document.getElementById('formularioExercicio');
 
-   if (objeto.multiplos){
-
       const dadoHTML = `   
       <div >
-      <label> São múltiplos</label>
+      <label> O Resultado é ${objeto.soma} </label>
    </div> 
    <br><br>
-   <div>
-      <button class="button" id="finalizar">Finalizar</button>
    </div>
+   <div>
+       <button class="button" id="finalizar">Finalizar</button>
+   </div>
+   
       `;
 
    
       main.innerHTML = dadoHTML;
 
-      const inputTroco = document.getElementById('troco')
-       
-      inputTroco.value = objeto.troco
-      return
-   }
-   else {
-      const dadoHTML = `   
-      <div >
-         <label> NÃO são múltiplos</label>
-      </div> 
-      <br><br>
-      <div>
-         <button class="button" id="finalizar">Finalizar</button>
-      </div>
-      `;
-   main.innerHTML = dadoHTML;
-   return
-   }
 };
 
  
