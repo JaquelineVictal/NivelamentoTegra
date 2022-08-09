@@ -51,14 +51,23 @@
           </ul>              
         </li>
       </ul>      
-     
-    </nav>
-
-   
-
-
     
+    </nav>
+     
+      <div class="corpo_formulario">
 
+        <form id="formularioExercicio" class="formularioExercicio">
+          <h1 class="titulo_formulario">Palíndroma</h1>
+          <br>
+          <label>Escreva uma palavra:</label>
+          <input id="palavra" type="text" placeholder="Escreva uma palavra:">
+          <br/><br/>
+           <div>
+              <button id="cancel" type="button">Cancelar</button>
+              <button id="salve" type="submit" >Calcular</button>
+          </div>
+      </form>
+   </div>
     
     <main class="main" id="root"></main>
     <footer>
@@ -75,4 +84,10 @@
       </div>
     </footer>
   </body>
-</html>
+  
+  <script
+    type="text/javascript"
+    src="https://www.gstatic.com/charts/loader.js"
+  ></script>
+  <script type="module" src="./Controller/ex27.js"></script>
+  </html>
